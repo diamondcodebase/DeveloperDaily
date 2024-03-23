@@ -28,7 +28,7 @@ def DoResearch():
     print(f"Developer studies case of possible solution/trick through Google/ChatGPT, skill set now is {knowledgeAndSkills}")
 
 # this function determines whether developer has enough concentration and proper skill to complete the task  
-def tryAndError():
+def TrialAndError():
     global round
     round += 1
     print(f"Round {round}, fight!")
@@ -46,15 +46,15 @@ def GiveThanks():
 
 
 # this function prints out the task and developer initial status 
-def taskStart():
+def TaskStart():
     print(f"This task required skill {skillRequired}, concentration {concentrationRequired}. Let do it~")
     print(f"Currently, developer's skill set is {knowledgeAndSkills} and concentration {concentration}")
 
 
-taskStart()
+TaskStart()
 
 while not success:
     EnjoyCoffee()
     DoResearch()
-    success = tryAndError()
+    success = TrialAndError()
 GiveThanks()
